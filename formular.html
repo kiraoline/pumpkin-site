@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tilmelding | The Great Pumpkin Games</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/formular.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                The Great Pumpkin Games
+            </a>
+
+            <nav aria-label="Hovednavigation">
+                <a href="index.html">Forside</a>
+                <a href="index.html#konkurrencer">Konkurrencer</a>
+                <a href="index.html#marked">Markedet</a>
+                <a href="svg.html">Interaktiv SVG</a>
+                <a href="formular.html">Tilmelding</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="form-page">
+        <div class="form-container">
+            <h1>Tilmeld dig konkurrencen</h1>
+            <p>Er du klar til The Great Pumpkin Games?</p>
+
+            <form id="signup-form">
+                <label for="name">Dit navn</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Din e-mail</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="competition">Vælg konkurrence</label>
+                <select id="competition" name="competition" required>
+                    <option value="">Vælg en konkurrence</option>
+                    <option value="largest">Det største græskar</option>
+                    <option value="carving">Bedste udskæring</option>
+                    <option value="funniest">Sjoveste græskar</option>
+                </select>
+
+                <label for="message">Besked (valgfri)</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+
+                <button type="submit">Tilmeld mig</button>
+            </form>
+
+            <p id="form-feedback" role="status" aria-live="polite"></p>
+        </div>
+    </main>
+</body>
+
+</html>

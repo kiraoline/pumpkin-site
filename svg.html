@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaktivt græskar</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/svg.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                The Great Pumpkin Games
+            </a>
+
+            <nav aria-label="Hovednavigation">
+                <a href="index.html">Forside</a>
+                <a href="index.html#konkurrencer">Konkurrencer</a>
+                <a href="index.html#marked">Markedet</a>
+                <a href="svg.html">Interaktiv SVG</a>
+                <a href="formular.html">Tilmelding</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="svg-page">
+        <h1>Udforsk græskarret</h1>
+        <p>Klik på græskarret og opdag en sjov fakta!</p>
+
+        <svg viewBox="0 0 400 350" role="img" aria-label="Klikbart orange græskar">
+
+            <ellipse id="pumpkin" cx="200" cy="195" rx="130" ry="115" fill="#E87C24" stroke="#A94B16" stroke-width="5"
+                tabindex="0" />
+
+            <path d="M190 85 Q185 45 215 40" fill="none" stroke="#466B32" stroke-width="18" stroke-linecap="round"
+                pointer-events="none" />
+
+            <path d="M145 110 Q110 195 145 280" fill="none" stroke="#C65A18" stroke-width="5" pointer-events="none" />
+
+            <path d="M255 110 Q290 195 255 280" fill="none" stroke="#C65A18" stroke-width="5" pointer-events="none" />
+        </svg>
+
+        <p id="pumpkin-info" aria-live="polite">
+            Klik på græskarret for at lære mere.
+        </p>
+    </main>
+
+
+</body>
+
+</html>
